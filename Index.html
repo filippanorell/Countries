@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #fb84aa;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: pink;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #fe55a7;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #ff0000;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #e934fd;
+  padding: 10px;
+  text-align: center;
+  color: rgb(106, 0, 255);
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+
+<header>
+  <h2>Countries</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">Sweden</a></li>
+      <li><a href="#">Norway</a></li>
+      <li><a href="#">Peru</a></li>
+      <li><a href="#">India</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Sweden</h1>
+    <p>Sweden has a population of 10 million.</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARwAAACxCAMAAAAh3/JWAAAAJFBMVEUAaqf+zAAAaKn/0ABKfJNQgIwAZqtMf41Fe5X/zwByjntRgYvwTh7hAAABqElEQVR4nO3ayY3DQBAEwSGpW/77uxZsig8OIFARDjQ63zXGHOt7Wz7Zruuk619uvYrzL3GCOEGcIE4QJ4gTxAniBHGCOEGcIE4QJ4gTxAniBHGCOEGcIE4QJ4gTxAniBHGCOEGcIE4QJ4gTxAniBHGCOEGcIE4QJ4gTxAniBHGCOEGcIE4QJ4gTxAniBHGCOEGcIE4QJ4gTxAniBHGCOEGcIE4QJ4gTxAniBHGCOOEccdY5bvcdce63SdcPMi5zPF474rwek64fZGyTPD+2WZbnrOMHGTt++FniBHGCOEGcIE4QJ4gTxAniBHGCOEGcIE4QJ4gTxAniBHGCOEGcIE4QJ4gTxAniBHGCOEGcIE4QJ4gTxAmWXcEmMFiThmkL3lPskCcRJ4gTxAniBHGCOEGcIE4QJ4gTxAniBHGCOEGcIE4QJ4gTxAniBHGCOEGcIE4QJ4gTxAniBHGCOEGcIE4QJ4gTxAniBHGCOEGcIE4QJ4gTxAniBHGCOEGcIE4QJ4gTxAniBHGCOEGcIE4QJ4gTxAniBHGCOEGcIE4QJ4gTxAnr+wRx/gBgCFQDC7+0YQAAAABJRU5ErkJggg==" alt="">
+  </article>
+</section>
+
+<footer>
+  <p>Footer</p>
+</footer>
+
+</body>
+</html>
